@@ -13,7 +13,21 @@ declare namespace WowInterface {
         calcClass: string;
         faction: number;
         items: IItems;
+        talents: any[];
         totalHonorableKills: number;
+        crucibleTraits: number[][];
+    }
+
+    export interface ITalent {
+        selected: boolean;
+        spec: ISpec;
+    }
+
+    export interface ISpec {
+        name: string;
+        role: string;
+        backgroundImage: string;
+        icon: string;
     }
 
     export interface IItems {
@@ -51,7 +65,26 @@ declare namespace WowInterface {
         displayInfoId: number;
         artifactAppearanceId: number;
         artifactTraits: any[];
-        relics: any[];
+        relics: IRelic[];
         appearance: any;
+        itemClass?: number;
+        itemSubClass?: number;
+        gemInfo?: any;
+        names?: string[] | null;
+    }
+
+    export interface IArmory {
+        region: string;
+        realm: string;
+        name: string;
+    }
+
+    export interface IRelic {
+        socket: number;
+        itemId: number;
+        context: number;
+        bonusLists: number[];
+        itemLevel: number;
+        item: IItem;
     }
 }

@@ -41,6 +41,7 @@ module.exports = config => {
         customLaunchers: {
             visibleElectron: {
                 base: 'Electron',
+                flags: ['--remote-debugging-port=9333'],
             },
         },
         frameworks: ['mocha', 'chai'],

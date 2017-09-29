@@ -1,11 +1,14 @@
-import WowApi from '@/services/WowApi';
-import { expect } from 'chai';
+// import WowApi from '@/services/WowApi';
+// import { expect } from 'chai';
 
-describe('RaidBots API', () => {
-    it('should get Magefix on Ysondre', async () => {
-        const character = await WowApi.GetCharacter('Ysondre', 'Magefix');
-
-        expect(character.name).to.equal('Magefix');
-        expect(character.realm).to.equal('Ysondre');
-    });
-});
+// describe('WowApi', function() {
+//     this.timeout(10000);
+//     it('should get Magefix on Ysondre-EU', function(done) {
+//         WowApi.GetCharacter('EU', 'Ysondre', 'Magefix').then(character => {
+//             expect(character.name).to.equal('Magefix');
+//             expect(character.realm).to.equal('Ysondre');
+//             expect(character.items.mainHand.relics.length).to.equal(3);
+//             done();
+//         });
+//     });
+// });

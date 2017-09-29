@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "author": "Jordan Deprez <devoid.coding@gmail.com>",
     "description": "An electron-vue project",
-    "license": null,
+    "license": "",
     "main": "./dist/electron/main.js",
     "scripts": {
         "build": "yarn compile && electron-builder",
@@ -61,6 +61,7 @@
     "devDependencies": {
         "@types/chai": "^4.0.4",
         "@types/mocha": "^2.2.43",
+        "@types/request": "^2.0.3",
         "babel-plugin-istanbul": "^4.1.5",
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-preset-stage-0": "^6.24.1",
